@@ -34,6 +34,15 @@ const useStyles = makeStyles(theme => ({
         textTransform: "none",
         whiteSpace: "nowrap",
     },
+    items: {
+        color: "#fff",
+        fontWeight: "400",
+        fontSize: "15px",
+        textTransform: "none",
+        whiteSpace: "nowrap",
+        border: "1px solid #DAA520",
+        borderRadius: "20px",
+    },
     menuButton: {
         marginRight: theme.spacing(2),
         color: "white",
@@ -57,7 +66,7 @@ const Header = props => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
     const handleMenu = event => {
         setAnchorEl(event.currentTarget);
@@ -80,6 +89,14 @@ const Header = props => {
         {
             menuTitle: "TV Shows",
             pageURL: "/Movie-DB/tv-shows"
+        },
+        {
+            menuTitle: "Sign Up",
+            pageURL: "/signup"
+        },
+        {
+            menuTitle: "Login",
+            pageURL: "/login"
         },
     ];
 
@@ -142,6 +159,18 @@ const Header = props => {
                                     onClick={() => { handleButtonClick("/Movie-DB/tv-shows")}}
                                 >
                                     TV Shows
+                                </Button>
+                                <Button
+                                    className={classes.items}
+                                    onClick={() => { handleButtonClick("/signup")}}
+                                >
+                                    Sign Up
+                                </Button>
+                                <Button
+                                    className={classes.items}
+                                    onClick={() => { handleButtonClick("/login")}}
+                                >
+                                    Login
                                 </Button>
                             </div>
                         )}
