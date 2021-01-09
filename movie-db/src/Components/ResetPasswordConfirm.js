@@ -51,6 +51,7 @@ const ResetPasswordConFirm = ({ match, reset_password_confirm }) => {
     };
 
     if (requestSent) {
+        alert('Reset successfull')
         return <Redirect to='/login' />
     }
 

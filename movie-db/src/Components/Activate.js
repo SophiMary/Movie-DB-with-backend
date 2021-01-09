@@ -34,6 +34,7 @@ const Activate = ({ verify, match }) => {
     };
 
     if (verified) {
+        alert('Account activated please login')
         return <Redirect to='/login' />
     }
 

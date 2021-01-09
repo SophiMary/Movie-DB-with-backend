@@ -59,6 +59,7 @@ const Signup = ({ signup, isAuthenticated }) => {
         return <Redirect to='/Movie-DB/movies' />
     }
     if (accountCreated) {
+        alert('Please activate your account, check your email to do so.')
         return <Redirect to='/login' />
     }
 

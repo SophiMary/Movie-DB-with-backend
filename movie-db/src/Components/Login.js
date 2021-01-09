@@ -50,6 +50,7 @@ const Login = ({ login, isAuthenticated }) => {
     };
 
     if (isAuthenticated) {
+        alert('Registered account should be activated, please check your email to do so.')
         return <Redirect to='/Movie-DB/movies' />
     }
 

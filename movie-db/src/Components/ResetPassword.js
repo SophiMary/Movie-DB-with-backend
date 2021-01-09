@@ -48,6 +48,7 @@ const ResetPassword = ({ reset_password }) => {
     };
 
     if (requestSent) {
+        alert('check your email to reset your password')
         return <Redirect to='/login' />
     }
 
