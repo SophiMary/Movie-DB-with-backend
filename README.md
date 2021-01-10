@@ -17,4 +17,4 @@ Then go to `backend/auth_system/settings.py`
 
 - Under DATABASES, set the PASSWORD field to your database password.
 - Under EMAIL_HOST_USER, set the email ID that you want to use.
-- Under EMAIL_HOST_PASSWORD, set the app password that you have setup for your email
+- Under EMAIL_HOST_PASSWORD, set the app password that you have setup for your email.
