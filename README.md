@@ -1,5 +1,5 @@
 # Movie DB Web app
-  Clone of TMDB with authentication 
+  Clone of TMDB with authentication. 
 
 ### Get Started:
 
