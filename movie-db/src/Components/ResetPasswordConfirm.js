@@ -67,6 +67,7 @@ const ResetPasswordConFirm = ({ match, reset_password_confirm }) => {
                         name='new_password'
                         value={new_password}
                         onChange={e => setNewPassword(e.target.value)}
+                        minLength='8'
                         required
                     />
                 </div>
@@ -78,6 +79,7 @@ const ResetPasswordConFirm = ({ match, reset_password_confirm }) => {
                         name='re_new_password'
                         value={re_new_password}
                         onChange={e => setNewRePassword(e.target.value)}
+                        minLength='8'
                         required
                     />
                 </div>
