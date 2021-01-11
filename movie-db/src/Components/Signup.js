@@ -97,7 +97,7 @@ const Signup = ({ signup, isAuthenticated }) => {
                         name='password'
                         value={password}
                         onChange={e => setPassword(e.target.value)}
-                        minLength='6'
+                        minLength='8'
                         required
                     />
                 </div>
@@ -109,7 +109,7 @@ const Signup = ({ signup, isAuthenticated }) => {
                         name='re_password'
                         value={re_password}
                         onChange={e => setRe_Password(e.target.value)}
-                        minLength='6'
+                        minLength='8'
                         required
                     />
                 </div>
